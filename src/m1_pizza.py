@@ -190,10 +190,10 @@ def run_test_draw_points_on_circle():
     # Test 4:  (YOU write THIS test)
     # -------------------------------------------------------------------------
 
-    title = 'DRAW_POINTS_ON_CIRCLE, test 4:  2 yellow dots.'
+    title = 'DRAW_POINTS_ON_CIRCLE, test 4:  1000 yellow dots.'
     window = rg.RoseWindow(400, 400, title)
     circle = rg.Circle(rg.Point(200, 200), 150)
-    draw_points_on_circle(window, circle, 2, 'yellow')
+    draw_points_on_circle(window, circle, 1000, 'yellow')
     window.close_on_mouse_click()
 
 def draw_points_on_circle(window, circle, number_of_points, color):
