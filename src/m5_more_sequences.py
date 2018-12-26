@@ -155,7 +155,7 @@ def count_last_n_odds(integers, n):
       :rtype: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     # -------------------------------------------------------------------------
     count = 0
@@ -238,10 +238,17 @@ def index_of_first_negative(numbers):
       :rtype: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     # -------------------------------------------------------------------------
-
+    count = ''
+    for k in range(len(numbers)):
+        if numbers[k] < 0:
+            count = count + str(k)
+    if len(count) > 0:
+        return count[0]
+    else:
+        return -1
 
 def run_test_contains_an_a():
     """ Tests the   contains_an_a   function. """
@@ -296,7 +303,7 @@ def contains_an_a(s):
       :rtype: bool
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     ###########################################################################
@@ -309,8 +316,12 @@ def contains_an_a(s):
     #   Use an explicit loop, as you have done in the other problems.
     #   No fair using the   count   or   find   string methods.
     # -------------------------------------------------------------------------
-
-
+    list1 = list(s)
+    for k in range(len(list1)):
+        if 'a' in list1:
+            return True
+        else:
+            return False
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
