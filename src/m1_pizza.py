@@ -32,9 +32,9 @@ def main():
 
     # run_test_generate_points_on_circle()
     # run_test_draw_points_on_circle()
-    # run_test_pizza()
+    run_test_pizza()
     # run_test_polygon()
-    run_test_fancy_polygon()
+    # run_test_fancy_polygon()
 
 
 def run_test_generate_points_on_circle():
@@ -296,7 +296,11 @@ def run_test_pizza():
     #     -- a large number of thin black lines
     #     -- on a yellow-filled circle.
     # -------------------------------------------------------------------------
-
+    window2 = rg.RoseWindow(500, 400)
+    circle = rg.Circle(rg.Point(250, 200), 150)
+    circle.fill_color = 'black'
+    pizza(window2, circle, 100, 'yellow', 3)
+    window2.close_on_mouse_click()
 
 def pizza(window, circle, number_of_slices, color, thickness):
     """
@@ -385,7 +389,8 @@ def run_test_polygon():
     window2 = rg.RoseWindow(400, 400)
     circle = rg.Circle(rg.Point(100, 100), 50)
     circle.fill_color = 'green'
-    polygon(window2, circle, 2, 'black', 10)
+    polygon(window2, circle, 4, 'black', 5)
+
     window.close_on_mouse_click()
 
 def polygon(window, circle, number_of_segments, color, thickness):
@@ -487,8 +492,8 @@ def run_test_fancy_polygon():
     #   a contrasting color for the lines makes them especially pretty.
     # -------------------------------------------------------------------------
     circle = rg.Circle(rg.Point(300, 200), 100)
-    circle.fill_color = 'yellow'
-    fancy_polygon(window, circle, 25, 7, 'blue', 4)
+    circle.fill_color = 'lime green'
+    fancy_polygon(window, circle, 20, 7, 'blue', 4)
     window.close_on_mouse_click()
 
 def fancy_polygon(window, circle, number_of_lines, hops_to_next_point, color,
@@ -563,6 +568,7 @@ def fancy_polygon(window, circle, number_of_lines, hops_to_next_point, color,
     #       appropriately.  ASK YOUR INSTRUCTOR FOR AN EXAMPLE.
     ###########################################################################
     # -------------------------------------------------------------------------
+    circle.attach_to(window)
 
 
 # -----------------------------------------------------------------------------
