@@ -317,7 +317,7 @@ def contains_an_a(s):
     #   No fair using the   count   or   find   string methods.
     # -------------------------------------------------------------------------
     list1 = list(s)
-    for k in range(len(list1)):
+    for k in range(len(list1)+1):
         if 'a' in list1:
             return True
         else:
