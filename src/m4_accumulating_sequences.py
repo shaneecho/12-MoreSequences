@@ -19,7 +19,7 @@ def main():
     # run_test_make_less_simple_string()
 
     # -------------------------------------------------------------------------
-    # TODO: 8. Uncomment the tests below before working _TODO_ 9.
+    # DONE: 8. Uncomment the tests below before working _TODO_ 9.
     #   They launch annoying rg.RoseWindows on each run that you don't want
     #   until you get to _TODO_ 9 and _TODO_ 10.
     # -------------------------------------------------------------------------
